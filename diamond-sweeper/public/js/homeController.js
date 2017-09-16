@@ -16,10 +16,7 @@ app.controller('homeCtrl',function($scope){
     $scope.clickCounter=function(data){
        if(data.value==='diamond'){
            $scope.diamondCount++;
-       }
-       else{
-           $scope.findNearestIndex();
-       }
+       }       
         $scope.clicked++;
         if($scope.diamondCount===8){
             alert('Finished!!!');
